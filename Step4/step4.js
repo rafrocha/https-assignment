@@ -9,7 +9,7 @@ function printHTML (html) {
   console.log(html);
 }
 
-function getAndPrintHTML (options, callback) {
+function getHTML (options, callback) {
   var body = "";
   /* Add your code here */
   https.get(options, function (response) {
@@ -33,4 +33,4 @@ function getAndPrintHTML (options, callback) {
 
 }
 
-getAndPrintHTML(requestOptions, printHTML);
+getHTML(requestOptions, printHTML);
